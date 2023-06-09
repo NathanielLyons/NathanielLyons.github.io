@@ -42,3 +42,34 @@
   </script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lion Website</title>
+  <style>
+    #lion-head {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    #lion-head::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 18px;
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div id="lion-head"></div>
+  <h1>GET STARTED NOW</h1>
+</body>
+</html>
